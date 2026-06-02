@@ -89,6 +89,18 @@ int main(int argc, char** argv) {
 
 
 					cout<<"\n===lab 5:excersise 1===="<<endl;
+					string new_word;
+					cout<<"\n Enter a word: ";
+					cin>>new_word;
+					cout<<"the 4th character of the word is: "<<new_word[3]<<endl;
+					int new_word_length = new_word.length();
+					cout<<"the length of the word is: "<<new_word_length<<endl;
+					new_word.replace(1,3,"--$--");
+					cout<<"the new word is: "<<new_word<<endl;
+					new_word.erase(6,7);
+					cout<<"the new word is: "<<new_word<<endl;
 					
+
+
 	return 0;
 }
