@@ -82,14 +82,35 @@ default:
 cout<<"selected gender = "<<selectgender<<endl;
 
  cout<<"\n----Excercise----"<<endl;
- char number;
- string selectnumber="";
- 
- 
- cout<<"Type a Number :"<<endl;
- cout<<"Y for yes"<<endl;
-cout<<"N for no"<<endl;
- cin>>number;
+ int number = 0;
+char choice;
+
+cout << "Type a number: ";
+cin >> number;
+
+cout << "Do you want to double the number?" << endl;
+cout << "Y or y for yes" << endl;
+cout << "N or n for no" << endl;
+cin >> choice;
+
+switch(choice)
+{
+    case 'Y':
+    case 'y':
+        number *= 2;
+        break;
+
+    case 'N':
+    case 'n':
+        number = number;
+        break;
+
+    default:
+        number = 0;
+        break;
+}
+
+cout << "The number is set to " << number << endl;
  
  
  
